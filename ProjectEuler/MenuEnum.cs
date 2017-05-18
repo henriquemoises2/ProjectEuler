@@ -12,7 +12,8 @@ namespace ProjectEuler
         {
             {1, new SumMultiples()},
             {2, new FibonacciEvenOdd()},
-            {3, new HighestPrimeFactor()}
+            {3, new HighestPrimeFactor()},
+            {4, new LastPalindromeProduct()}
         };
 
     }

@@ -44,6 +44,7 @@
     <Compile Include="FibonacciEvenOdd.cs" />
     <Compile Include="HighestPrimeFactor.cs" />
     <Compile Include="IProblem.cs" />
+    <Compile Include="LastPalindromeProduct.cs" />
     <Compile Include="MenuEnum.cs" />
     <Compile Include="ProjectEuler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
