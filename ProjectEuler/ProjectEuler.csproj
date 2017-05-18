@@ -52,6 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Problems Overview\Problem 1.pdf" />
+    <None Include="Problems Overview\Problem 2.pdf" />
+    <None Include="Problems Overview\Problem 3.pdf" />
+    <None Include="Problems Overview\Problem 4.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
