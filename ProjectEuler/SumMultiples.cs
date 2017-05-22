@@ -15,6 +15,7 @@ namespace ProjectEuler
         private int roof;
         private int total = 0;
 
+        #region Overrides
 
         public bool Run()
         {
@@ -80,6 +81,8 @@ namespace ProjectEuler
             }
 
         }
+
+        #endregion
 
     }
 }
