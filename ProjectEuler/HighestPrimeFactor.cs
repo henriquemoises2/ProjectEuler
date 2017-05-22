@@ -56,7 +56,7 @@ namespace ProjectEuler
             }
  
             double boundary = (int)Math.Floor(Math.Sqrt(number));
-            for (double i = 2; i < boundary; i++)
+            for (double i = 2; i <= boundary; i++)
             {
                 if ((number % i == 0)) 
                 {

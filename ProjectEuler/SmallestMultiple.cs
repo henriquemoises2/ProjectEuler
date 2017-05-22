@@ -13,7 +13,6 @@ namespace ProjectEuler
 
         private int limitLower;
         private int limitHigher;
-        private HighestPrimeFactor highesPrimeFactorManager;
 
         #region Overrides
 

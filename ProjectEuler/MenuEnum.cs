@@ -15,7 +15,8 @@ namespace ProjectEuler
             {3, new HighestPrimeFactor()},
             {4, new LastPalindromeProduct()},
             {5, new SmallestMultiple()},
-            {6, new SumSquareDifference()}
+            {6, new SumSquareDifference()},
+            {7, new NthPrime()}
         };
 
     }
