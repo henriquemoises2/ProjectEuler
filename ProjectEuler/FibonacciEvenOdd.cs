@@ -8,7 +8,7 @@ namespace ProjectEuler
 {
     class FibonacciEvenOdd : IProblem
     {
-        private const string menuEntry = "Fibonnaci Even/Odd Sum";
+        private const string MENU_ENTRY = "Fibonnaci Even/Odd Sum";
 
         private long maxFibonacciNumber;
         private long total = 0;
@@ -17,6 +17,8 @@ namespace ProjectEuler
         private long nextNumber;
         private bool isEven;
         private string parityInput;
+
+        #region Overrides
 
         public bool Run()
         {
@@ -54,7 +56,6 @@ namespace ProjectEuler
             }
             else
             {
-                ShowError();
                 return false;
             }
 
@@ -62,7 +63,7 @@ namespace ProjectEuler
 
         public string GetMenuEntry()
         {
-            return menuEntry;
+            return MENU_ENTRY;
         }
 
         public bool Introduction()
@@ -91,18 +92,18 @@ namespace ProjectEuler
             {
                 return false;
             }
-
         }
 
-        public void ShowError()
-        {
-            Console.WriteLine("Wrong value inserted.");
-        }
+        #endregion
+
+        #region Private Methods
 
         private long ComputeNextFibonacciValue(long previousNumber, long actualNumber)
         {
             return previousNumber + actualNumber;
         }
+
+        #endregion
 
     }
 }

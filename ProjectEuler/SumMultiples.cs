@@ -8,7 +8,7 @@ namespace ProjectEuler
 {
     class SumMultiples : IProblem
     {
-        private const string menuEntry = "Multiples";
+        private const string MENU_ENTRY = "Multiples";
 
         private int numberMultiplesToCompute;
         private List<int> multiplesToCompute;
@@ -33,7 +33,6 @@ namespace ProjectEuler
             }
             else
             {
-                ShowError();
                 return false;
             }
 
@@ -41,7 +40,7 @@ namespace ProjectEuler
 
         public string GetMenuEntry()
         {
-            return menuEntry;
+            return MENU_ENTRY;
         }
 
         public bool Introduction()
@@ -80,11 +79,6 @@ namespace ProjectEuler
                 return false;
             }
 
-        }
-
-        public void ShowError()
-        {
-            Console.WriteLine("Wrong value inserted.");
         }
 
     }

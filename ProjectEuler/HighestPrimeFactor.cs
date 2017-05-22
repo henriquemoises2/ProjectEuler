@@ -8,29 +8,17 @@ namespace ProjectEuler
 {
     class HighestPrimeFactor : IProblem
     {
-        private const string menuEntry = "Highest Prime Factor";
+        private const string MENU_ENTRY = "Highest Prime Factor";
         private double numberToCompute;
+
+        #region Overrides
 
         public bool Run()
         {
-            double currentPrime;
-            double boundry;
-            double maxPrime = 2;
-
+            
             if (Introduction())
             {
-                boundry = (int)Math.Floor(Math.Sqrt(numberToCompute));
-                for (currentPrime = 2; currentPrime < boundry; currentPrime = GetNextPrime(currentPrime))
-                {
-                    if (numberToCompute % currentPrime == 0)
-                    {
-                        maxPrime = currentPrime;
-                        while (numberToCompute % currentPrime == 0)
-                        {
-                            numberToCompute /= currentPrime;
-                        }
-                    }
-                }
+                double maxPrime = ComputeHighestPrime(numberToCompute);
                 Console.WriteLine("Result: " + maxPrime);
                 return true;
             }
@@ -39,7 +27,7 @@ namespace ProjectEuler
 
         public string GetMenuEntry()
         {
-            return menuEntry;
+            return MENU_ENTRY;
         }
 
         public bool Introduction()
@@ -52,10 +40,9 @@ namespace ProjectEuler
             else return false;
         }
 
-        public void ShowError()
-        {
-            Console.WriteLine("Invalid value inserted.");
-        }
+        #endregion
+
+        #region Private Methods
 
         private bool IsPrime(double number)
         {
@@ -90,5 +77,27 @@ namespace ProjectEuler
             }
         }
 
+        private double ComputeHighestPrime(double number) 
+        {
+            double currentPrime;
+            double boundry;
+            double maxPrime = 2;
+
+            boundry = (int)Math.Floor(Math.Sqrt(numberToCompute));
+            for (currentPrime = 2; currentPrime < boundry; currentPrime = GetNextPrime(currentPrime))
+            {
+                if (numberToCompute % currentPrime == 0)
+                {
+                    maxPrime = currentPrime;
+                    while (numberToCompute % currentPrime == 0)
+                    {
+                        numberToCompute /= currentPrime;
+                    }
+                }
+            }
+            return maxPrime;
+        }
+
+        #endregion
     }
 }

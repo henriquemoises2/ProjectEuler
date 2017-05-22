@@ -8,9 +8,11 @@ namespace ProjectEuler
 {
     class LastPalindromeProduct : IProblem
     {
-        private const string menuEntry = "Last Palindrome Product";
+        private const string MENU_ENTRY = "Last Palindrome Product";
         int numberOfDigits;
         List<double> palindromesList;
+
+        #region Overrides
 
         public bool Run()
         {
@@ -30,7 +32,7 @@ namespace ProjectEuler
 
         public string GetMenuEntry()
         {
-            return menuEntry;
+            return MENU_ENTRY;
         }
 
         public bool Introduction()
@@ -43,10 +45,9 @@ namespace ProjectEuler
             else return false;
         }
 
-        public void ShowError()
-        {
-            Console.WriteLine("Invalid value inserted.");
-        }
+        #endregion
+
+        #region Private Methods
 
         private bool IsPalindrome(double number)
         {
@@ -85,5 +86,7 @@ namespace ProjectEuler
             palindromesList.Sort();
             return palindromesList;
         }
+
+        #endregion
     }
 }

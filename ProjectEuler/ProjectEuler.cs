@@ -15,25 +15,21 @@ namespace ProjectEuler
 
             do
             {
-
+                ClearDisplay();
                 Console.WriteLine("Choose an Option:");
                 ShowOptions();
 
-                if (Int32.TryParse(Console.ReadLine(), out opcaoSeleccionada))
+                if (Int32.TryParse(Console.ReadLine(), out opcaoSeleccionada) && MenuEnum.menuOptions.ContainsKey(opcaoSeleccionada))
                 {
-                    LimpaConsola();
-                    if (MenuEnum.menuOptions.ContainsKey(opcaoSeleccionada))
+                    ClearDisplay();
+                    if (!MenuEnum.menuOptions[opcaoSeleccionada].Run())
                     {
-                        MenuEnum.menuOptions[opcaoSeleccionada].Run();
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid option chosen.");
+                        ShowError();
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid option chosen.");
+                    ShowMenuError();
                 }
             }
             while (Console.ReadKey(true).Key != ConsoleKey.Escape);
@@ -48,9 +44,19 @@ namespace ProjectEuler
             }
         }
 
-        private static void LimpaConsola()
+        private static void ClearDisplay()
         {
             Console.Clear();
+        }
+
+        public static void ShowMenuError()
+        {
+            Console.WriteLine("Invalid menu option chosen.");
+        }
+
+        public static void ShowError()
+        {
+            Console.WriteLine("Invalid value inserted.");
         }
 
     }

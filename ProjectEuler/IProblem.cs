@@ -11,6 +11,5 @@ namespace ProjectEuler
         string GetMenuEntry();
         bool Introduction();
         bool Run();
-        void ShowError();
     }
 }
