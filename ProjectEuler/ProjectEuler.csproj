@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="FibonacciEvenOdd.cs" />
     <Compile Include="HighestPrimeFactor.cs" />
+    <Compile Include="LargestProductInSeries.cs" />
     <Compile Include="IProblem.cs" />
     <Compile Include="LastPalindromeProduct.cs" />
     <Compile Include="MenuEnum.cs" />
