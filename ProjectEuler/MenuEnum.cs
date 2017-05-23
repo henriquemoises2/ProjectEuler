@@ -17,7 +17,8 @@ namespace ProjectEuler
             {5, new SmallestMultiple()},
             {6, new SumSquareDifference()},
             {7, new NthPrime()},
-            {8, new LargestProductInSeries()}
+            {8, new LargestProductInSeries()},
+            {9, new PythagorianTriplet()}
         };
 
     }
