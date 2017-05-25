@@ -20,7 +20,8 @@ namespace ProjectEuler
             {8, new LargestProductInSeries()},
             {9, new PythagorianTriplet()},
             {10, new SumPrimes()},
-            {11, new LargestProductInGrid()}
+            {11, new LargestProductInGrid()},
+            {12, new HighlyDivisibleTriangular()}
         };
 
     }

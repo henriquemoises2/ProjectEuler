@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectEuler.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,54 +45,19 @@ namespace ProjectEuler
 
         #region Private Methods
 
-        private bool IsPrime(double number)
+        private double ComputeHighestPrime(double number)
         {
-            if (number == 1)
-            {
-                return false;
-            }
-            if (number == 2) 
-            {
-                return true;
-            }
- 
-            double boundary = (int)Math.Floor(Math.Sqrt(number));
-            for (double i = 2; i <= boundary; i++)
-            {
-                if ((number % i == 0)) 
-                {
-                    return false;
-                }
-            }
-            return true;       
-        }
-
-        private double GetNextPrime(double prime)
-        {
-            for (double number = prime + 1;;number++)
-            {
-                if (IsPrime(number))
-                {
-                    return number;
-                }
-            }
-        }
-
-        private double ComputeHighestPrime(double number) 
-        {
-            double currentPrime;
-            double boundry;
+            double boundry = (int)Math.Floor(Math.Sqrt(number));
             double maxPrime = 2;
-
-            boundry = (int)Math.Floor(Math.Sqrt(numberToCompute));
-            for (currentPrime = 2; currentPrime < boundry; currentPrime = GetNextPrime(currentPrime))
+            
+            for (double currentPrime = 2; currentPrime < boundry; currentPrime = Prime.GetNextPrime(currentPrime))
             {
-                if (numberToCompute % currentPrime == 0)
+                if (number % currentPrime == 0)
                 {
                     maxPrime = currentPrime;
-                    while (numberToCompute % currentPrime == 0)
+                    while (number % currentPrime == 0)
                     {
-                        numberToCompute /= currentPrime;
+                        number /= currentPrime;
                     }
                 }
             }

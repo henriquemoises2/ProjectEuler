@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectEuler.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace ProjectEuler
         {
             if (Introduction())
             {
-                double solution = GetNthPrime(index);
+                double solution = Prime.GetNthPrime(index);
                 Console.WriteLine("Result: " + solution);
                 return true;
             }
@@ -47,54 +48,6 @@ namespace ProjectEuler
         }
 
         #endregion
-
-        #region Private Methods
-
-        private double GetNthPrime(int index)
-        {
-            double prime = 2;
-            for (int i = 2; i <= index; i++) 
-            {
-                prime = GetNextPrime(prime);
-            }
-            return prime;
-        }
-
-        private double GetNextPrime(double prime)
-        {
-            for (double number = prime + 1; ; number++)
-            {
-                if (IsPrime(number))
-                {
-                    return number;
-                }
-            }
-        }
-
-        private bool IsPrime(double number)
-        {
-            if (number == 1)
-            {
-                return false;
-            }
-            if (number == 2)
-            {
-                return true;
-            }
-
-            double boundary = (int)Math.Floor(Math.Sqrt(number));
-            for (double i = 2; i <= boundary; i++)
-            {
-                if ((number % i == 0))
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        #endregion
-
 
     }
 }
