@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="FibonacciEvenOdd.cs" />
     <Compile Include="HighestPrimeFactor.cs" />
+    <Compile Include="LargestProductInGrid.cs" />
     <Compile Include="LargestProductInSeries.cs" />
     <Compile Include="IProblem.cs" />
     <Compile Include="LastPalindromeProduct.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="PythagorianTriplet.cs" />
     <Compile Include="SmallestMultiple.cs" />
     <Compile Include="SumMultiples.cs" />
+    <Compile Include="SumPrimes.cs" />
     <Compile Include="SumSquareDifference.cs" />
   </ItemGroup>
   <ItemGroup>
