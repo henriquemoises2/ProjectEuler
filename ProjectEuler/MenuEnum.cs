@@ -22,7 +22,9 @@ namespace ProjectEuler
             {10, new SumPrimes()},
             {11, new LargestProductInGrid()},
             {12, new HighlyDivisibleTriangular()},
-            {13, new LargeSum()}
+            {13, new LargeSum()},
+            {14, new LongestCollatzSequence()},
+            {15, new LatticePaths()}
         };
 
     }

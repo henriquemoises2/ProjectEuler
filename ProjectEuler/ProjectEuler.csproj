@@ -50,6 +50,8 @@
     <Compile Include="Problems 1-50\LargeSum.cs" />
     <Compile Include="Problems 1-50\LastPalindromeProduct.cs" />
     <Compile Include="MenuEnum.cs" />
+    <Compile Include="Problems 1-50\LatticePaths.cs" />
+    <Compile Include="Problems 1-50\LongestCollatzSequence.cs" />
     <Compile Include="Problems 1-50\NthPrime.cs" />
     <Compile Include="ProjectEuler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +61,7 @@
     <Compile Include="Problems 1-50\SumPrimes.cs" />
     <Compile Include="Problems 1-50\SumSquareDifference.cs" />
     <Compile Include="Utils\Prime.cs" />
+    <Compile Include="Utils\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -70,6 +73,7 @@
     <None Include="Problems Overview\Problem 6.pdf" />
     <None Include="Problems Overview\Problem 7.pdf" />
     <None Include="Problems Overview\Problem 9.pdf" />
+    <None Include="Problems Overview\Problem15.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class LargeSum :IProblem
+    class LargeSum : IProblem
     {
         private const string MENU_ENTRY = "Sum of Squares/Square of sum difference";
         private const int NUM_DIGITS = 50;
