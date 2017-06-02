@@ -41,22 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FibonacciEvenOdd.cs" />
-    <Compile Include="HighestPrimeFactor.cs" />
-    <Compile Include="HighlyDivisibleTriangular.cs" />
-    <Compile Include="LargestProductInGrid.cs" />
-    <Compile Include="LargestProductInSeries.cs" />
+    <Compile Include="Problems 1-50\FibonacciEvenOdd.cs" />
+    <Compile Include="Problems 1-50\HighestPrimeFactor.cs" />
+    <Compile Include="Problems 1-50\HighlyDivisibleTriangular.cs" />
+    <Compile Include="Problems 1-50\LargestProductInGrid.cs" />
+    <Compile Include="Problems 1-50\LargestProductInSeries.cs" />
     <Compile Include="IProblem.cs" />
-    <Compile Include="LastPalindromeProduct.cs" />
+    <Compile Include="Problems 1-50\LargeSum.cs" />
+    <Compile Include="Problems 1-50\LastPalindromeProduct.cs" />
     <Compile Include="MenuEnum.cs" />
-    <Compile Include="NthPrime.cs" />
+    <Compile Include="Problems 1-50\NthPrime.cs" />
     <Compile Include="ProjectEuler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PythagorianTriplet.cs" />
-    <Compile Include="SmallestMultiple.cs" />
-    <Compile Include="SumMultiples.cs" />
-    <Compile Include="SumPrimes.cs" />
-    <Compile Include="SumSquareDifference.cs" />
+    <Compile Include="Problems 1-50\PythagorianTriplet.cs" />
+    <Compile Include="Problems 1-50\SmallestMultiple.cs" />
+    <Compile Include="Problems 1-50\SumMultiples.cs" />
+    <Compile Include="Problems 1-50\SumPrimes.cs" />
+    <Compile Include="Problems 1-50\SumSquareDifference.cs" />
     <Compile Include="Utils\Prime.cs" />
   </ItemGroup>
   <ItemGroup>
