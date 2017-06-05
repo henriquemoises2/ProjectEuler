@@ -24,7 +24,9 @@ namespace ProjectEuler
             {12, new HighlyDivisibleTriangular()},
             {13, new LargeSum()},
             {14, new LongestCollatzSequence()},
-            {15, new LatticePaths()}
+            {15, new LatticePaths()},
+            {16, new PowerDigitSum()},
+            {17, new NumberLetterCounts()}
         };
 
     }
