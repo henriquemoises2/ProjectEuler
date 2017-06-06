@@ -26,7 +26,9 @@ namespace ProjectEuler
             {14, new LongestCollatzSequence()},
             {15, new LatticePaths()},
             {16, new PowerDigitSum()},
-            {17, new NumberLetterCounts()}
+            {17, new NumberLetterCounts()},
+            {18, new MaximumPathSum_I()},
+            {19, new CountingSundays()}
         };
 
     }

@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problems 1-50\CountingSundays.cs" />
     <Compile Include="Problems 1-50\FibonacciEvenOdd.cs" />
     <Compile Include="Problems 1-50\HighestPrimeFactor.cs" />
     <Compile Include="Problems 1-50\HighlyDivisibleTriangular.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="MenuEnum.cs" />
     <Compile Include="Problems 1-50\LatticePaths.cs" />
     <Compile Include="Problems 1-50\LongestCollatzSequence.cs" />
+    <Compile Include="Problems 1-50\MaximumPathSum_I.cs" />
     <Compile Include="Problems 1-50\NthPrime.cs" />
     <Compile Include="Problems 1-50\NumberLetterCounts.cs" />
     <Compile Include="Problems 1-50\PowerDigitSum.cs" />
