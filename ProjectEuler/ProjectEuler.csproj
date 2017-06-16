@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Problems 1-50\CountingSundays.cs" />
+    <Compile Include="Problems 1-50\FactorialDigitSum.cs" />
     <Compile Include="Problems 1-50\FibonacciEvenOdd.cs" />
     <Compile Include="Problems 1-50\HighestPrimeFactor.cs" />
     <Compile Include="Problems 1-50\HighlyDivisibleTriangular.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Problems 1-50\SumMultiples.cs" />
     <Compile Include="Problems 1-50\SumPrimes.cs" />
     <Compile Include="Problems 1-50\SumSquareDifference.cs" />
+    <Compile Include="Utils\BigInteger.cs" />
     <Compile Include="Utils\Prime.cs" />
     <Compile Include="Utils\Utils.cs" />
   </ItemGroup>

@@ -28,7 +28,8 @@ namespace ProjectEuler
             {16, new PowerDigitSum()},
             {17, new NumberLetterCounts()},
             {18, new MaximumPathSum_I()},
-            {19, new CountingSundays()}
+            {19, new CountingSundays()},
+            {20, new FactorialDigitSum()}
         };
 
     }
