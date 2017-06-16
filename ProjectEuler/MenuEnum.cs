@@ -29,7 +29,8 @@ namespace ProjectEuler
             {17, new NumberLetterCounts()},
             {18, new MaximumPathSum_I()},
             {19, new CountingSundays()},
-            {20, new FactorialDigitSum()}
+            {20, new FactorialDigitSum()},
+            {21, new AmicableNumbers()}
         };
 
     }

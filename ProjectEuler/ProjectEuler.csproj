@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problems 1-50\AmicableNumbers.cs" />
     <Compile Include="Problems 1-50\CountingSundays.cs" />
     <Compile Include="Problems 1-50\FactorialDigitSum.cs" />
     <Compile Include="Problems 1-50\FibonacciEvenOdd.cs" />
@@ -81,6 +82,7 @@
     <None Include="Problems Overview\Problem 7.pdf" />
     <None Include="Problems Overview\Problem 9.pdf" />
     <None Include="Problems Overview\Problem15.pdf" />
+    <None Include="Problems Overview\Problem22.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
